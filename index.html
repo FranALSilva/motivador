@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Frases Motivacionais</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>✨Frases Motivacionais✨</h1>
+        <p id="frase">Clique no botão para gerar uma frase!</p>
+        <button onclick="gerarFrase()">Nova Frase</button>
+    </div>
+
+    <script>
+        function gerarFrase() {
+            fetch('/frase')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('frase').textContent = data.frase;
+                });
+        }
+    </script>
+</body>
+</html>

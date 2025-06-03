@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #9cc6eb;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container {
+    background: #e0dac5;
+    padding: 40px;
+    border-radius: 15px;
+    width: 420px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
